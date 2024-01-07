@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getAllProducts } from '../../utils/ProductServices';
+import style from './style.module.css';
 
 const Home = () => {
 
@@ -23,7 +24,8 @@ const Home = () => {
 
     return (
         <div>
-            {loading &&
+            {
+                loading &&
                 <h1>{loading}</h1>
             }
             {
@@ -33,11 +35,11 @@ const Home = () => {
 
             {
                 prodArr &&
-                <div>
+                <div className={style.tableData}>
                     <h1>this is home</h1>
-                    <table>
+                    <table cellSpacing={0}>
                         <tbody>
-                            <tr>
+                            <tr className={style.tableRow}>
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Quantity</th>
@@ -53,6 +55,8 @@ const Home = () => {
                             )}
                         </tbody>
                     </table>
+
+                    <button className={style.addItem}>Add New Item</button>
                 </div>
             }
         </div>

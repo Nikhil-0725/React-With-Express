@@ -1,0 +1,35 @@
+.AddItemForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 50px;
+    background-color: beige;
+}
+
+table{
+    margin-bottom: 50px;
+}
+
+th{
+    text-align: left;
+    padding: 10px;
+}
+
+input{
+    height: 20px;
+    background-color: beige;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: large;
+    background-color: greenyellow;
+}
